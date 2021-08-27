@@ -80,14 +80,6 @@ else
   brew install --cask notion
 fi
 
-echo "Check Notion Installation..."
-if (mdfind "kMDItemKind == 'Application'" | grep -qi "Notion.app") then
-  echo "Already Installed!"
-else
-  brew install --cask notion
-fi
-
-
 echo "Check Cloudflare Warp Installation..."
 if (mdfind "kMDItemKind == 'Application'" | grep -qi "Cloudflare Warp.app") then
   echo "Already Installed!"
