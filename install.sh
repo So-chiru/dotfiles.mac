@@ -66,6 +66,12 @@ else
   brew install --cask discretescroll
 fi
 
+echo "Check Alfred Installation..."
+if (mdfind "kMDItemKind == 'Application'" | grep -qi "Alfred 4.app") then
+  echo "Already Installed!"
+else
+  brew install --cask alfred
+fi
 
 echo "Check Notion Installation..."
 if (mdfind "kMDItemKind == 'Application'" | grep -qi "Notion.app") then
