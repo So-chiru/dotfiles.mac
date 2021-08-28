@@ -150,3 +150,8 @@ echo "Applying theme..."
 
 node ./insertp10k.js
 cp .p10k.zsh ~/.p10k.zsh
+
+
+echo "Installing SpaceVim..."
+
+curl -sLf https://spacevim.org/install.sh | bash
